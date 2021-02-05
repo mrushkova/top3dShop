@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
+
+    <title>Top 3D Shop</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-up">
+        <div class="header-up__left">
+          <div class="header-up__city">
+            <a href="#" class="header-up__city-link link">Санкт-Петербург</a>
+          </div>
+          <div class="header-up__tel">
+            <a href="tel:+78126135838" class="link">+7 (812) 613-58-38</a>
+          </div>
+          <div class="header-up__time">
+            Пн–пт 10:00–19:00, сб-вс 10:00–17:00
+          </div>
+        </div>
+        <div class="header-up__right">
+          <div class="header-up__write">
+            <a href="#" class="link">Напишите нам</a>
+          </div>
+          <div class="header-up__boss">
+            <a href="#" class="link">Свяжитесь с директором</a>
+          </div>
+
+          <div class="socials">
+            <a
+              class="socials__link"
+              href="https://tglink.ru/top_3d_shop_bot"
+              rel="”noopener”"
+              target="_blank"
+            >
+              <svg class="socials__icon">
+                <use xlink:href="img/sprite.svg#tg"></use>
+              </svg>
+            </a>
+            <a
+              class="socials__link"
+              href="https://www.skype.com"
+              rel="”noopener”"
+              target="_blank"
+            >
+              <svg class="socials__icon">
+                <use xlink:href="img/sprite.svg#skype"></use>
+              </svg>
+            </a>
+            <a
+              class="socials__link"
+              href="https://wa.me/19732644278"
+              rel="”noopener”"
+              target="_blank"
+            >
+              <svg class="socials__icon">
+                <use xlink:href="img/sprite.svg#tel"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header-bar">
+        <div class="header-bar__logo-box">
+          <a class="link" href="https://top3dshop.ru/">
+            <img src="img/logo.png" alt="Яндекс маркет" class="logo" />
+          </a>
+          <div class="header-bar__moto">
+            Ваш эксперт <br />
+            на рынке <span>3D</span>-техники
+          </div>
+        </div>
+        <div class="header-bar__yandex">
+          <a class="link" href="https://market.yandex.ru/"
+            ><img
+              src="img/yandex.png"
+              width="81"
+              height="50"
+              alt="Яндекс маркет"
+          /></a>
+        </div>
+        <form class="header-bar__form">
+          <input
+            class="header-bar__form-input"
+            placeholder="Введите запрос, например, Formlabs Form 2"
+            type="search"
+          />
+          <input
+            class="header-bar__form-input--mobile"
+            placeholder="Поиск"
+            type="search"
+          />
+          <button class="header-bar__form-search">Найти</button>
+          <button class="header-bar__form-search--mobile">
+            <svg class="icon icon--search">
+              <use xlink:href="img/sprite.svg#search-icon"></use>
+            </svg>
+          </button>
+        </form>
+        <div class="header-bar__login-box">
+          <a class="link header-bar__login" href="#">
+            <svg class="icon icon--entrance">
+              <use xlink:href="img/sprite.svg#entrance"></use>
+            </svg>
+            Войти
+          </a>
+        </div>
+        <button class="btn btn--cart">
+          <svg class="icon icon--cart">
+            <use xlink:href="img/sprite.svg#cart"></use>
+          </svg>
+          <span class="btn--cart-text">Корзина пуста</span>
+        </button>
+        <div class="header__burger">
+          <button
+            class="btn btn--burger"
+            type="button"
+            aria-label="Кнопка мобильного меню"
+          >
+            <svg class="icon icon--menu">
+              <use xlink:href="img/sprite.svg#menu-icon"></use>
+            </svg>
+          </button>
+          <button
+            class="btn btn--close-burger visually-hidden"
+            type="button"
+            aria-label="Кнопка закрытия мобильного меню"
+          >
+            <svg class="icon icon--close">
+              <use xlink:href="img/sprite.svg#close-icon"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <nav class="header-nav">
+        <ul class="header-nav__links">
+          <li class="header-nav__item">
+            <a class="link" href="#">Акции</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="link" href="#">О нас</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="link" href="#">Мероприятия</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="link" href="#">Оплата и доставка</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="link" href="#">Что с моим заказом?</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="link" href="#">Гос. закупки</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="link" href="#">Блог</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="link" href="#">Мастер-классы</a>
+          </li>
+          <li class="header-nav__item">
+            <a class="link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-categories">
+        <ul class="header-categories__links">
+          <li class="header-categories__item">
+            <a class="link" href="#">3D-принтеры</a>
+          </li>
+          <li class="header-categories__item">
+            <a class="link" href="#">Станки</a>
+          </li>
+          <li class="header-categories__item">
+            <a class="link" href="#">3D-сканеры</a>
+          </li>
+          <li class="header-categories__item">
+            <a class="link" href="#">Роботы</a>
+          </li>
+          <li class="header-categories__item">
+            <a class="link" href="#">Образование</a>
+          </li>
+          <li class="header-categories__item">
+            <a class="link" href="#">Стоматологам</a>
+          </li>
+          <li class="header-categories__item">
+            <a class="link" href="#">Гаджеты</a>
+          </li>
+          <li class="header-categories__item">
+            <a class="link" href="#">Материалы</a>
+          </li>
+          <li class="header-categories__item">
+            <a class="link" href="#">ПО</a>
+          </li>
+          <li class="header-categories__item">
+            <a class="link" href="#">Решения</a>
+          </li>
+          <li class="header-categories__item">
+            <a class="link" href="#">Учебный центр</a>
+          </li>
+          <li class="header-categories__item">
+            <a class="link" href="#">Услуги</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header-mobile visually-hidden">
+        <nav class="header-nav--mobile">
+          <ul class="header-nav--mobile__links">
+            <li class="header-nav--mobile__item">
+              <a class="link" href="#">Акции</a>
+            </li>
+            <li class="header-nav--mobile__item">
+              <a class="link" href="#">О нас</a>
+            </li>
+            <li class="header-nav--mobile__item">
+              <a class="link" href="#">Мероприятия</a>
+            </li>
+            <li class="header-nav--mobile__item">
+              <a class="link" href="#">Оплата и доставка</a>
+            </li>
+            <li class="header-nav--mobile__item">
+              <a class="link" href="#">Что с моим заказом?</a>
+            </li>
+            <li class="header-nav--mobile__item">
+              <a class="link" href="#">Гос. закупки</a>
+            </li>
+            <li class="header-nav--mobile__item">
+              <a class="link" href="#">Блог</a>
+            </li>
+            <li class="header-nav--mobile__item">
+              <a class="link" href="#">Мастер-классы</a>
+            </li>
+            <li class="header-nav--mobile__item">
+              <a class="link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-categories--mobile">
+          <ul class="header-categories--mobile__links">
+            <li class="header-categories--mobile__item">
+              <a class="link" href="#">3D-принтеры</a>
+            </li>
+            <li class="header-categories--mobile__item">
+              <a class="link" href="#">Станки</a>
+            </li>
+            <li class="header-categories--mobile__item">
+              <a class="link" href="#">3D-сканеры</a>
+            </li>
+            <li class="header-categories--mobile__item">
+              <a class="link" href="#">Роботы</a>
+            </li>
+            <li class="header-categories--mobile__item">
+              <a class="link" href="#">Образование</a>
+            </li>
+            <li class="header-categories--mobile__item">
+              <a class="link" href="#">Стоматологам</a>
+            </li>
+            <li class="header-categories--mobile__item">
+              <a class="link" href="#">Гаджеты</a>
+            </li>
+            <li class="header-categories--mobile__item">
+              <a class="link" href="#">Материалы</a>
+            </li>
+            <li class="header-categories--mobile__item">
+              <a class="link" href="#">ПО</a>
+            </li>
+            <li class="header-categories--mobile__item">
+              <a class="link" href="#">Решения</a>
+            </li>
+            <li class="header-categories--mobile__item">
+              <a class="link" href="#">Учебный центр</a>
+            </li>
+            <li class="header-categories--mobile__item">
+              <a class="link" href="#">Услуги</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="about">
+        <h1 class="about__heading visually-hidden">О нас</h1>
+        <div class="about__photo">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="img/photo@1x.webp 1x, img/photo@2x.webp 2x"
+            />
+            <img
+              class="about__photo"
+              src="img/photo@2x.jpg"
+              srcset="img/photo@1x.jpg 1x, img/photo@2x.jpg 2x"
+              alt="Наша команда"
+            />
+          </picture>
+        </div>
+
+        <div class="about__info">
+          <div class="about__info--left">
+            <h2 class="about__heading">
+              Твоя работа <br />
+              в крупнейшем интеграторе цифрового производства
+            </h2>
+            <form action="https://www.w3docs.com/" target="_blank">
+              <button type="submit" class="btn btn--cv">
+                Отправить резюме
+              </button>
+            </form>
+            <p class="about__data">
+              Нажимая кнопку, вы соглашаетесь <br />
+              на обработку персональных данных.
+            </p>
+          </div>
+          <div class="about__info--right">
+            <h2 class="about__heading--mobile">
+              Твоя работа <br />
+              в крупнейшем интеграторе цифрового производства
+            </h2>
+            <p class="about__text">
+              Top 3D Shop – лидер по продажам 3D-оборудования в России и странах
+              СНГ. В 2018 мы стали лучшим интегратором 3D оборудования по
+              аддитивным технологиям и цифровому производству по версии
+              <a class="about__link link">3D Print Awards.</a>
+            </p>
+            <p class="about__text">
+              За 6 лет работы более 10 000 клиентов по всей России и СНГ выбрали
+              Top 3D Shop. В 2018 наш оборот составил 600 млн. рублей, в
+              компании работает более 100 сотрудников.
+            </p>
+            <p class="about__text">
+              Новая цель: 1 млрд торгового оборота в этом году и выход на
+              международные рынки. Если вы — целеустремленный специалист,
+              готовый учиться новым навыкам и учить других, мыслите не просто
+              как исполнитель, а как владелец своего направления, то нам по
+              пути!
+            </p>
+          </div>
+        </div>
+        <div class="about__more">
+          <h3 class="about__subheading">Лучше один раз увидеть:</h3>
+          <ul class="about__links">
+            <li class="about__item">
+              <a class="about__link link" href="#"
+                >Как устроена наша компания изнутри</a
+              >
+            </li>
+            <li class="about__item">
+              <a class="about__link link" href="#"
+                >Как создавалась компания - необычная история</a
+              >
+            </li>
+            <li class="about__item">
+              <a class="about__link link" href="#">Читай о нас на 3D Today</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="video">
+        <div class="video__top">
+          <h2 class="video__heading">Видео о нас</h2>
+          <div class="video__buttons">
+            <div class="video__buttons-box">
+              <a class="video__button" href="#">
+                <svg class="icon icon--video">
+                  <use xlink:href="img/sprite.svg#left"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="video__buttons-box">
+              <a class="video__button" href="#">
+                <svg class="icon icon--video">
+                  <use xlink:href="img/sprite.svg#right"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="video__blocks">
+          <iframe
+            src="https://www.youtube.com/embed/OYFOWAL1NlA"
+            width="550"
+            class="video__block"
+            allowfullscreen
+            height="320"
+          ></iframe>
+          <iframe
+            src="https://www.youtube.com/embed/SOYBsly_yN8"
+            width="550"
+            height="320"
+            allowfullscreen
+            class="video__block"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>

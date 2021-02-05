@@ -1,0 +1,42 @@
+.icon {
+  margin-right: 1rem;
+
+  @include respond(phone) {
+    margin-right: 0;
+  }
+
+  &--entrance {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  &--cart {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: $color-white;
+  }
+
+  &--video {
+    width: 1rem;
+    height: 1.7rem;
+
+    @include respond(big-desktop) {
+      width: 0.8rem;
+      height: 1.2rem;
+      transform: translateX(-50%);
+    }
+  }
+
+  &--search {
+    width: 2rem;
+    height: 2rem;
+    background-color: $color-white;
+  }
+
+  &--menu,
+  &--close {
+    width: 2rem;
+    height: 2rem;
+    background-color: $color-white;
+  }
+}

@@ -1,0 +1,95 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    transition: all 0.2s;
+    font-size: 1.3rem;
+    color: $color-white;
+    background-color: $color-secondary;
+    border: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    background-color: $color-secondary-dark;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+
+  &--cart {
+    width: 16rem;
+    height: 3.6rem;
+    padding: 0.9rem 1.8rem;
+    line-height: 1.7rem;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+    @include respond(phone) {
+      padding: 0.9rem 0.2rem;
+      width: 3.2rem;
+    }
+
+    &-text {
+      @include respond(phone) {
+        display: none;
+      }
+    }
+
+    @include respond(desktop) {
+      font-size: 1.2rem;
+    }
+
+    @include respond(tab) {
+      margin-right: 2rem;
+    }
+  }
+
+  &--cv {
+    width: 28rem;
+    font-size: 1.6rem;
+    padding: 1.2rem 1.6rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+
+    @include respond(big-desktop) {
+      width: 23rem;
+      padding: 1rem 1.2rem;
+      font-size: 1.4rem;
+    }
+
+    @include respond(desktop) {
+      font-size: 1.2rem;
+    }
+
+    @include respond(tab-small) {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &--burger,
+  &--close-burger {
+    padding: 0;
+    background-color: transparent;
+    overflow: hidden;
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}

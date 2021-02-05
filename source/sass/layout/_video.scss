@@ -1,0 +1,97 @@
+.video {
+  max-width: 144.8rem;
+  margin: 0 auto 10rem;
+  padding: 7rem 13.7rem 6rem;
+  background-color: #f9f9f9;
+
+  @include respond(desktop) {
+    padding: 5rem 8rem;
+  }
+
+  @include respond(big-desktop) {
+    padding: 5rem 10rem;
+  }
+
+  @include respond(tab-small) {
+    padding: 5rem 4rem 0;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5.5rem;
+
+    @include respond(tab-small) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__heading {
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 40px;
+    font-family: 'SF Pro Display', sans-serif;
+
+    @include respond(big-desktop) {
+      font-size: 3rem;
+    }
+
+    @include respond(tab-small) {
+      font-size: 2rem;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+  }
+
+  &__buttons-box {
+    display: flex;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    padding: 1.1rem 1.5rem;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+
+    @include respond(big-desktop) {
+      width: 3rem;
+      height: 3rem;
+      padding: 1rem 1.2rem;
+    }
+  }
+
+  &__blocks {
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(big-desktop) {
+      justify-content: space-around;
+    }
+
+    @include respond(desktop) {
+      flex-flow: column wrap;
+      align-items: center;
+    }
+  }
+
+  &__block {
+    @include respond(big-desktop) {
+      margin-right: 3rem;
+    }
+
+    @include respond(desktop) {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+
+    @include respond(tab-small) {
+      width: 100%;
+    }
+  }
+
+  &__block:last-child {
+    margin-right: 0;
+  }
+}

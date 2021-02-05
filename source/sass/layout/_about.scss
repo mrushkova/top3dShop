@@ -1,0 +1,223 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  max-width: 144rem;
+  padding: 7rem 10.7rem;
+  margin: 0 auto;
+
+  @include respond(desktop) {
+    padding: 5rem 8rem;
+  }
+
+  @include respond(tab-small) {
+    padding: 5rem 4rem;
+  }
+
+  &__photo {
+    width: 100%;
+  }
+
+  &__heading,
+  &__heading--mobile {
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 2.7rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: $color-black;
+    margin-bottom: 4rem;
+
+    @include respond(big-desktop) {
+      font-size: 2.5rem;
+    }
+
+    @include respond(desktop) {
+      font-size: 2rem;
+    }
+
+    @include respond(tab-small) {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__heading {
+    @include respond(tab-small) {
+      display: none;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'SF Pro Text', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: $color-text;
+    margin: 5rem 0 8.5rem;
+
+    @include respond(big-desktop) {
+      font-size: 1.5rem;
+    }
+
+    @include respond(desktop) {
+      font-size: 1.3rem;
+    }
+
+    @include respond(tab) {
+      margin: 3.5rem 0;
+    }
+
+    @include respond(tab-small) {
+      flex-direction: column-reverse;
+      align-items: center;
+      font-size: 1.5rem;
+    }
+
+    &--left {
+      max-width: 33.3rem;
+
+      @include respond(big-desktop) {
+        margin-right: 2rem;
+      }
+    }
+
+    &--right {
+      max-width: 70.8rem;
+    }
+  }
+
+  &__data {
+    font-size: 1.5rem;
+    color: #c4c4c4;
+
+    @include respond(big-desktop) {
+      font-size: 1.3rem;
+    }
+
+    @include respond(desktop) {
+      font-size: 1rem;
+    }
+
+    @include respond(tab-small) {
+      text-align: center;
+    }
+  }
+
+  &__link {
+    color: $color-secondary;
+    text-decoration: underline;
+  }
+
+  &__text {
+    display: block;
+    line-height: 19px;
+    letter-spacing: -0.7px;
+    text-align: justify;
+    margin-bottom: 2rem;
+  }
+
+  &__more {
+    position: relative;
+    font-family: 'SF Pro Text', sans-serif;
+    border-top: 1px solid $color-grey-light;
+  }
+
+  &__subheading {
+    position: absolute;
+    display: block;
+    transform: translateY(-50%);
+    padding-right: 2.2rem;
+    background-color: $color-white;
+    color: $color-black;
+    font-size: 2.4rem;
+
+    @include respond(big-desktop) {
+      font-size: 2.2rem;
+    }
+
+    @include respond(desktop) {
+      font-size: 2rem;
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 1.6rem;
+    margin-top: 6.5rem;
+    list-style: none;
+    color: $color-text;
+
+    @include respond(big-desktop) {
+      font-size: 1.5rem;
+    }
+
+    @include respond(phone) {
+      margin-top: 3rem;
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    position: relative;
+    margin-right: 12rem;
+
+    @include respond(big-desktop) {
+      margin-right: 5rem;
+    }
+
+    @include respond(tab-small) {
+      margin-right: 2rem;
+    }
+
+    @include respond(phone) {
+      margin-bottom: 1.5rem;
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      transform: translateY(60%);
+      fill: $color-text;
+      width: 4px;
+      height: 8px;
+
+      background-image: url(../img/right.svg);
+      background-size: 5px 8px;
+
+      @supports (-webkit-mask-image: url() or (mask-image: url())) {
+        background-color: $color-text;
+        -webkit-mask-image: url(../img/right.svg);
+        -webkit-mask-size: cover;
+        mask-image: url(../img/right.svg);
+        mask-size: cover;
+        background-image: none;
+      }
+    }
+
+    &:hover {
+      &::after {
+        @supports (-webkit-mask-image: url() or (mask-image: url())) {
+          background-color: $color-secondary;
+          -webkit-mask-image: url(../img/right-red.svg);
+          -webkit-mask-size: cover;
+          mask-image: url(../img/right-red.svg);
+          mask-size: cover;
+          background-image: none;
+        }
+      }
+    }
+  }
+
+  &__link {
+    padding-right: 1.9rem;
+    color: $color-text;
+
+    @include respond(big-desktop) {
+      padding-right: 1.2rem;
+    }
+  }
+}

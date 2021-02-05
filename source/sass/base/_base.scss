@@ -1,0 +1,60 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; //1rem = 10px  10px/16px = 62.5%
+
+  @include respond(tab) {
+    font-size: 56.25%; //1rem = 9px  9px/16px = 56.25%
+  }
+
+  @include respond(tab-small) {
+    font-size: 50%; //1rem = 8px  8px/16px = 50%
+  }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: $default-font-size;
+  font-weight: 400;
+  color: $color-text;
+  box-sizing: border-box;
+  margin: 0;
+  padding-top: 1.2rem;
+
+  @include respond(tab) {
+    padding-top: 0;
+  }
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+.logo {
+  @include respond(tab) {
+    width: 4.5rem;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    color: $color-secondary;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
